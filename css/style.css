@@ -1,0 +1,31 @@
+body{
+    background-color: #F7ECDE;
+}
+.bookMark{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    position: relative;
+}
+.bookMark::before{
+    content: '';
+    position: absolute;
+    background-color: #FEC260;
+    height: 20px;
+    width: 24%;
+    bottom: 30%;
+    z-index: -11;
+    transition: all 0.5s;
+}
+.bookMark:hover::Before{
+    height: 40px;
+}
+.bookMark-body h2{
+    font-family: 'Righteous', sans-serif;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b3a93c,#045a08);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a{
+    color: inherit;
+}

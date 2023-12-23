@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- ===== favicon ===== -->
+    <link rel="icon" href="bookmark.png"></link>
+    <!-- ===== Font Awesome ===== -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- ===== Bootstrap Framework ===== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ===== Font Used ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!-- ===== Main Style sheet ===== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="container text-center">
+            <h1 class="bookMark py-5 border border-top-0 border-end-0 border-start-0 border-black border-1">Bookmarker</h1>
+            <div class="bookMark-body py-3">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                        Bookmark your favorite sites 
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="pb-4 border border-top-0 border-end-0 border-start-0 border-black border-1">
+                    <div class="mb-3 text-start">
+                        <label class="mb-2 fw-bold" for="sName"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+                        <input type="text" name="" id="sName" class="form-control" placeholder="Bookmark Name">
+                    </div>
+                    <div class="text-start">
+                        <label class="mb-2 fw-bold" for="sURL"> <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                        <input type="text" name="" id="sURL" class="form-control" placeholder="Website URL">
+                    </div>
+                    <button onclick="submit()" class="btn btn-dark mt-4 col-2" id="submit">Submit</button>
+                </div>
+            </div>
+            <table class="table table-striped my-2 text-center">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tBody" class="text-center">
+                
+                </tbody>
+            </table>
+            <button onclick="deleteAll()" class="btn btn-dark my-5"><i class="fa-solid fa-trash me-1"></i>Delete All</button>
+        </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
